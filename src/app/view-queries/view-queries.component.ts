@@ -10,12 +10,12 @@ export class ViewQueriesComponent implements OnInit {
 
   queryData;
 
-  constructor(service: QueryDataService) {
+  constructor(private service: QueryDataService) {
     
-    this.queryData=service.GetQueries();
   }
 
   ngOnInit(): void {
+    this.service.GetQueries().subscribe(res=>(this.queryData=res));
   }
 
 }

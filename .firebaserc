@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "betfix-aebf7": {
+      "hosting": {
+        "BetaFix": [
+          "betfix-aebf7"
+        ]
+      }
+    }
+  }
+}

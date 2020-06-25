@@ -51,7 +51,7 @@ export class ProfileDataService
     }
     GetProfileData()
     {
-        return this.Profile;
+        return new UserProfile(1, 'Har', 'Harmonpreet ' ,'singh', 871770797);
     }
     AuthenticateLogin(Email: string, Password: string)
     {

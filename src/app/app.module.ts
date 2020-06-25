@@ -11,6 +11,11 @@ import { ProfileDataService } from './shared/profile.service';
 import { AuthenticationComponent } from './authentication/authentication.component';
 import { LoginComponent } from './login/login.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AngularFireModule } from '@angular/fire';
+import { environment } from 'src/environments/environment';
+import { AngularFirestoreModule, AngularFirestore } from '@angular/fire/firestore';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +30,9 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
+    
   ],
   providers: [QueryDataService, ProfileDataService],
   bootstrap: [AppComponent]
