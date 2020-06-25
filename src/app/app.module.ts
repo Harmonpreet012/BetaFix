@@ -10,6 +10,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { ProfileDataService } from './shared/profile.service';
 import { AuthenticationComponent } from './authentication/authentication.component';
 import { LoginComponent } from './login/login.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,6 +24,7 @@ import { LoginComponent } from './login/login.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule,
   ],
   providers: [QueryDataService, ProfileDataService],
   bootstrap: [AppComponent]
