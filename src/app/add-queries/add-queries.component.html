@@ -1,0 +1,11 @@
+<form #QueryForm="ngForm" (ngSubmit)="addQuery(QueryForm)">
+    <div class="container">
+        <div class="form-group">
+            Heading: <input type="text" class="form-control" ngModel name="queryHeading" requried>
+            Description: <input type="text" class="form-control" ngModel name="queryDescription" requried> 
+            Author: <input type="text" class="form-control" ngModel name="queryAuthor" requried> 
+
+            <button class="btn btn-primary" type="submit">Post Query</button>
+        </div>
+    </div>
+</form>

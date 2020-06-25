@@ -1,0 +1,9 @@
+<form #QueryForm="ngForm" (ngSubmit)="Login(QueryForm)">
+    <div class="container">
+    <div class="form-group">
+        Email: <input type="email" class="form-control" ngModel name="Email" requried> 
+        Password:   <input type="password" class="form-control" ngModel name="Password" requried>
+        <button class="btn btn-primary" type="submit">Login</button>
+    </div>
+    </div>
+</form>
